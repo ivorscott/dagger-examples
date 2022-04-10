@@ -30,8 +30,8 @@ jobs:
           install-only: true
       - name: Deploy to Netlify
         run: | 
+          cd pkg/universe.dagger.io/examples/todoapp
+
           dagger project update
 
-          cd pkg/universe.dagger.io/examples/todoapp
-          
           dagger do deploy
