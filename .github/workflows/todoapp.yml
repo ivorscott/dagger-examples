@@ -28,4 +28,4 @@ jobs:
         # See all options at https://github.com/dagger/dagger-for-github
         with:
           workdir: pkg/universe.dagger.io/examples/todoapp
-          args: do deploy
+          args: dagger project update; do deploy
